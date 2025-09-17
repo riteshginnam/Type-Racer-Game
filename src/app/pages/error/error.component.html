@@ -1,0 +1,13 @@
+<div class="wrapper">
+  <div class="title-section">
+    <h1>Error</h1>
+  </div>
+  <div class="section">
+    <ng-content *ngIf="showContent">
+      Oops! The page you&#39;re looking for doesn&#39;t exist. <br />
+      Try checking the URL or
+      <a routerLink="/home">-> head back to the home page</a>
+      <a routerLink="/typing_test">-> take typing test</a>
+    </ng-content>
+  </div>
+</div>

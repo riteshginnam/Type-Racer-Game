@@ -1,0 +1,16 @@
+<div class="input-row">
+  <ng-content *ngIf="showContent">
+    <input
+      #wordInput
+      type="text"
+      id="word-input"
+      placeholder="Start typing..."
+      autocomplete="off"
+      autocorrect="offf"
+      autocapitalize="off"
+      (input)="onInputChange()"
+      (keydown)="onKeydown($event)"
+    />
+    <button id="redo" (click)="onRedoClick()">Redo</button>
+  </ng-content>
+</div>

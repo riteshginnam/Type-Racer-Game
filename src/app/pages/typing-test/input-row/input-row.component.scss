@@ -1,0 +1,31 @@
+.input-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+#word-input {
+  padding: 10px;
+  font-size: 31px;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--content-background-color);
+  color: var(--text-color);
+}
+
+#redo {
+  padding: 10px 20px;
+  width: 150px;
+  font-size: 25px;
+  background-color: var(--content-background-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#redo:hover {
+  background-color: var(--menu-hover);
+}

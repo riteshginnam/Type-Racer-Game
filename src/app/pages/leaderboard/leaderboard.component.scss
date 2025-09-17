@@ -1,0 +1,66 @@
+.leaderboard {
+  background-color: var(--content-background-color);
+  padding: 20px;
+  border-radius: 10px;
+  height: 550px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  color: var(--text-color);
+}
+
+th {
+  padding: 12px;
+  font-size: 18px;
+  text-align: center;
+}
+
+tbody {
+  tr:nth-child(even) {
+    background-color: var(--content-background-color);
+  }
+  tr:nth-child(odd) {
+    background-color: var(--menu-hover);
+  }
+}
+
+td {
+  padding: 10px;
+  font-size: 16px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.pagination {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.pagination button {
+  background-color: var(--content-background-color);
+  border-radius: 5px;
+  border: none;
+  color: var(--text-color);
+  width: 80px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: var(--menu-hover);
+}

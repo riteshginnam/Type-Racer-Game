@@ -27,7 +27,9 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/styles.scss",
+              "src/styles/scrollbar.scss",
+              "src/styles/themes.scss"
             ]
           },
           "configurations": {

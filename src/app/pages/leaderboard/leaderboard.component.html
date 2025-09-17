@@ -1,0 +1,46 @@
+<div class="wrapper">
+  <div class="title-section">
+    <h1>Leaderboard</h1>
+  </div>
+
+  <div class="leaderboard">
+    <ng-content *ngIf="showContent">
+      <table *ngIf="leaderboard.length > 0">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Username</th>
+            <th>Clean speed(WPM)</th>
+            <th>Raw Speed(WPM)</th>
+            <th>Accuracy(%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let entry of leaderboard; let i = index">
+            <td>{{ (currentPage - 1) * pageSize + i + 1 }}</td>
+            <td>{{ entry.username }}</td>
+            <td>{{ entry.cleanSpeed }}</td>
+            <td>{{ entry.rawSpeed }}</td>
+            <td>{{ entry.accuracy }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p *ngIf="leaderboard.length === 0 && showLeaderboardMessage === true">
+        No leaaderboard data available.
+      </p>
+    </ng-content>
+  </div>
+
+  <div class="pagination" *ngIf="leaderboard.length > 0">
+    <ng-content *ngIf="showContent">
+      <button (click)="previousPage()" [disabled]="currentPage === 1">
+        Previous
+      </button>
+      <span> Page {{ currentPage }}</span>
+      <button (click)="nextPage()" [disabled]="currentPage === totalPages">
+        Next
+      </button>
+    </ng-content>
+  </div>
+</div>

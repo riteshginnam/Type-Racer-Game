@@ -1,0 +1,87 @@
+header {
+  display: flex;
+  align-items: flex-end;
+  height: 5vh;
+  user-select: none;
+}
+
+.logo-container {
+  padding: 0 2% 0.25% 0.75%;
+}
+
+#logo {
+  color: var(--text-color);
+  font-size: 35px;
+}
+
+#logo a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.login-register-container {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--text-color);
+  width: 100%;
+  padding: 0px 40px 8px 0px;
+}
+
+.login-register-container p {
+  color: var(--login-register-text);
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.login-register-container p a {
+  color: var(--text-color);
+}
+
+.menu-container {
+  height: 5vh;
+}
+
+.main-menu {
+  background: var(--color-router-container);
+  border-radius: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  min-height: 42px;
+  overflow: hidden;
+}
+
+.menu-item {
+  display: flex;
+  flex: 1;
+  color: var(--text-color);
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: var(--app-color-background) 1.5px solid;
+  font-size: 19px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-item:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.menu-item:last-child {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.menu-item:hover {
+  background-color: var(--menu-hover);
+}
+
+.menu-item a {
+  color: var(--text-color);
+  text-decoration: none;
+}

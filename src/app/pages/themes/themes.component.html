@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <div class="title-section">
+    <h1>Themes</h1>
+  </div>
+  <div class="theme-container" *ngIf="showContent">
+    <div
+      class="theme-option"
+      *ngFor="let theme of themes"
+      (click)="selectTheme(theme.name)"
+    >
+      <span class="theme-name">{{ theme.displayName }}</span>
+
+      <div class="theme-preview">
+        <span
+          class="color-dot"
+          *ngFor="let color of theme.colors"
+          [style.backgroundColor]="color"
+        ></span>
+      </div>
+    </div>
+  </div>
+</div>

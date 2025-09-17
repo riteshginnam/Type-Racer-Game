@@ -1,0 +1,35 @@
+<div class="wrapper">
+  <div class="title-section">
+    <h1>About</h1>
+  </div>
+
+  <div class="section">
+    <ng-content *ngIf="showContent">
+      <h3>- How typing speed is calculated?</h3>
+      <p>
+        Typing speed is calculated by dividing the total number of correctly
+        typed characters by 4, which represents the average word length in
+        English. This approach helps to minimize the impact of random factors
+        caused by varying word lengths. By focusing on characters rather than
+        words, we obtain a more precise measurement of typing speed.
+      </p>
+      <h3>- Why this website was created?</h3>
+      <p>
+        This website was created with the purpose of offering a professional
+        tool to help individuals learn fast and accurate keyboard typing. Its
+        development aims to provide a platform where users can enhance their
+        typing skills in an efficient and effective manner.
+      </p>
+      <h3>- Who can benefit from this platform?</h3>
+      <p>
+        Whether you are a student, professional, or simply someone looking to
+        improve their typing skills, this platform is designed to meet a wide
+        range of needs. The typing exercises and performance tracking tools
+        benefit both beginners, who can start at their own pace, and advanced
+        typists, who want to refine their skills and aim for higher accuracy and
+        speed. Our mission is to make typing practice engaging, accessible, and
+        rewarding for everyone.
+      </p>
+    </ng-content>
+  </div>
+</div>

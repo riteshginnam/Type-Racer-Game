@@ -1,0 +1,28 @@
+.section {
+  background-color: var(--content-background-color);
+  padding: 20px;
+  padding-top: 6px;
+  border-radius: 15px;
+  color: var(--text-color);
+  font-size: 36px;
+  line-height: 1.85;
+  min-height: 240px;
+  white-space: normal;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+a {
+  color: var(--link-color);
+  font-weight: bold;
+  cursor: pointer;
+  display: inline;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--link-hover-color);
+}

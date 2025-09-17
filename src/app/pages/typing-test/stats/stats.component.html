@@ -1,0 +1,42 @@
+<div class="stats-container">
+  <ng-content *ngIf="showContent">
+    <button class="toggle-button" (click)="toggleStats()">
+      {{ showStats ? "-" : "+" }}
+    </button>
+
+    <div class="stats" *ngIf="showStats">
+      <div class="stat-column">
+        <div class="stat-item">
+          <span>Clean speed:</span>
+          <span class="result">{{ stats.cleanSpeed }} wpm</span>
+        </div>
+        <div class="stat-item">
+          <span>Accuracy:</span>
+          <span class="result">{{ stats.accuracy }}%</span>
+        </div>
+        <div class="stat-item">
+          <span>Raw speed:</span>
+          <span class="result">{{ stats.rawSpeed }} wpm</span>
+        </div>
+      </div>
+      <div class="stat-column">
+        <div class="stat-item">
+          <span>All words:</span>
+          <span class="result">{{ stats.allWords }}</span>
+        </div>
+        <div class="stat-item">
+          <span>Incorrect words:</span>
+          <span class="result">{{ stats.incorrectWords }}</span>
+        </div>
+        <div class="stat-item">
+          <span>All letters:</span>
+          <span class="result">{{ stats.allLetters }}</span>
+        </div>
+        <div class="stat-item">
+          <span>Incorrect letters:</span>
+          <span class="result">{{ stats.incorrectLetters }}</span>
+        </div>
+      </div>
+    </div>
+  </ng-content>
+</div>

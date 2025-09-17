@@ -1,0 +1,46 @@
+.theme-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.theme-option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--text-color);
+  border-radius: 8px;
+  background-color: var(--content-background-color);
+
+  &:hover {
+    transform: scale(1.01);
+    background-color: var(--menu-hover);
+  }
+}
+
+.theme-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--text-color);
+  flex: 1;
+}
+
+.theme-preview {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.color-dot {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  border: 1px solid var(--text-color);
+  transition: border-color 0.2s ease;
+}
+
+.color-dot:hover {
+  border-color: var(--menu-hover);
+}

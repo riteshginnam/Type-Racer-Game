@@ -1,0 +1,40 @@
+.word-display {
+  background-color: var(--content-background-color);
+  padding: 20px;
+  padding-top: 6px;
+  border-radius: 15px;
+  color: var(--text-color);
+  font-size: 36px;
+  line-height: 1.85;
+  min-height: 245px;
+  //   min-width: 1650px; // for testing
+  white-space: normal;
+  user-select: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.word-display p {
+  margin: 15px 0;
+}
+
+.word {
+  padding-right: 22px;
+}
+
+.letter {
+  display: inline-block;
+}
+
+.correct {
+  color: var(--correct-word-color);
+}
+
+.incorrect {
+  color: var(--incorrect-word-color);
+}
+
+.current-word {
+  color: var(--current-word-color);
+}
